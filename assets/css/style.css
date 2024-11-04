@@ -1,0 +1,139 @@
+/* Reset  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* root variable */
+:root {
+  --color-primary: #219f95;
+  --color-primary-light: #234894;
+  --color-secondary-light: #afcedd;
+  --color-secondary-dark: #696969;
+  --color-navbar: #f8f8f8;
+  --color-user-name: #1e1e1e;
+  --color-body: #333333;
+  --color-white: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.btn {
+  outline: 0;
+  border: 0;
+  padding: 1.92rem 1.574rem;
+  border-radius: 8px;
+  /* margin: 1rem; */
+  text-align: center;
+  white-space: nowrap;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn--secondary {
+  background-color: var(--color-secondary-light);
+  color: var(--color-primary-light);
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 6px;
+}
+.box {
+  width: 40px;
+  height: 40px;
+}
+
+/* CARD Design */
+.card {
+  padding: 2rem;
+  background-color: var(--color-white);
+}
+.card .title-card {
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* CARD ITEMS */
+.card__item {
+  max-width: 40rem;
+  height: 200px;
+  padding: 1.5rem;
+  border-bottom: 1px solid #cccc;
+  margin-bottom: 3rem;
+}
+
+.item-header .box__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-header h3 {
+  color: var(--color-primary-light);
+  position: absolute;
+  margin-right: 5rem;
+  padding-top: 0.4rem;
+}
+
+.item-header p {
+  color: var(--color-secondary-dark);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-body {
+  padding: 1rem 0.5rem;
+}
+.item-body .card_text {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+.item-footer img {
+  border-radius: 8px;
+}
+.user__name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+}
+.control-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* TABLET DISPLAY */
+@media screen and (min-width: 768px) {
+  .card-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .card-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
